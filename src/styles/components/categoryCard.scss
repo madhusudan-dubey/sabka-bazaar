@@ -1,0 +1,26 @@
+@import "../variable";
+.category-cards {
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
+  .category-card {
+    padding: 20px 0 30px 0;
+    min-height: 250px;
+    flex-wrap: wrap;
+    position: relative;
+    @media (max-width: 767px) {
+      min-height: 200px;
+    }
+    .description {
+      margin: 15px 0 30px;
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    &:not(:last-child) {
+      .bottom-shadow {
+        display: block !important;
+      }
+    }
+  }
+}

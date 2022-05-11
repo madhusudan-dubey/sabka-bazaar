@@ -1,0 +1,76 @@
+@import "../variable";
+
+.header-row {
+  position: fixed;
+  max-width: 1440px;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+.header-navigation {
+  > ul {
+    > li {
+      > a {
+        display: block;
+        padding: 10px 15px;
+      }
+    }
+  }
+  padding-left: 80px;
+  @media (max-width: 1024px) {
+    padding-left: 30px;
+  }
+}
+.header {
+  box-shadow: 1px 3px 10px #eaeaea;
+  min-height: 105px;
+  @media (max-width: 767px) {
+    min-height: 61px;
+  }
+  .row.jst-sp-bw {
+    flex-wrap: nowrap;
+  }
+  .header-logo {
+    img {
+      @media (max-width: 767px) {
+        max-width: 107px;
+      }
+    }
+  }
+}
+.header-left {
+  > .row {
+    align-items: end;
+  }
+  padding-top: 9px;
+  padding-bottom: 9px;
+  @media (max-width: 767px) {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+.header-right-links {
+  font-size: 14px;
+  justify-content: right;
+  margin-bottom: 18px;
+  a {
+    display: inline-block;
+    padding: 4px 7px;
+  }
+}
+.header-cart-icon {
+  .text {
+    margin-left: 2px;
+  }
+  .count-text {
+    margin-left: 10px;
+    font-size: initial;
+  }
+  padding: 15px 25px;
+  border: 0;
+  background: $color-grey;
+  cursor: pointer;
+}
+.header-navigation > ul > li > a.active {
+  color: $color-red;
+}

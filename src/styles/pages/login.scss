@@ -1,0 +1,66 @@
+@import "../variable";
+.login {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login__left {
+    h2 {
+      padding-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+  }
+  .login__form {
+    input {
+      height: 40px;
+      width: 20rem;
+      margin-bottom: 1rem;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #888;
+    }
+    .login__button {
+      height: 40px;
+      width: 20rem;
+      border: none;
+      outline: none;
+      background: $color-red;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 500;
+    }
+  }
+}
+
+.auth-wrapper {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 20px auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .auth-wrapper {
+    flex-direction: column;
+    > div {
+      &:last-child {
+        margin-top: 30px;
+      }
+    }
+    div {
+      width: 100%;
+    }
+  }
+  .register__form {
+    form {
+      input {
+        width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
